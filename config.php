@@ -1,10 +1,9 @@
 <?php
-$servername = "your_server_name";
-$username = "your_username";
-$password = "your_password";
+$servername = "localhost";
+$username = "root";  // Change if needed
+$password = "";  // Change if needed
 $dbname = "askdeal";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
