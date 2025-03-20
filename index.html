@@ -7,22 +7,21 @@
     <title>ASKDEAL</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
-    <script src="/main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <div class="welcomsec">
+    <!-- Welcome Section -->
+    <section class="welcomsec">
         <h2>Welcome to ASKDEAL</h2>
-        <h3>Get The Best Offers In ALl Products At One Place</h3>
+        <h3>Get The Best Offers In All Products At One Place</h3>
+    </section>
 
-
-
-    </div>
+    <!-- Navbar Section -->
     <nav>
         <h1 class="logo">ASKDEAL</h1>
         <div class="nav-buttons">
-            <button onclick="showSection('home')">Home
-            </button>
+            <button onclick="showSection('home')">Home</button>
             <button onclick="showSection('products')">Products</button>
             <button onclick="showSection('deals')">Deals</button>
             <button onclick="showSection('about')">About Us</button>
@@ -32,11 +31,10 @@
         <div class="search-container">
             <input type="text" placeholder="Search..." class="search-bar">
             <button class="search-button">
-                <span class="material-icons">
-                    search
-                </span>
+                <i class="fas fa-search"></i>
             </button>
         </div>
+
         <!-- User and Cart -->
         <div class="user-cart">
             <button class="user-icon" onclick="showUserMenu()">
@@ -46,328 +44,94 @@
                 <i class="fa fa-shopping-cart"></i>
             </button>
         </div>
-        </div>
-
-
     </nav>
 
-
-    <section class="active section-p1" id="features">
-        <div class="fe-box">
-            <img src="features/f1.png" alt="Free Shipping Icon">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="features/f2.png" alt="Online Order">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="features/f3.png" alt="Save Money">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="features/f4.png" alt="Promotions">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="features/f5.png" alt="Happy Sell">
-            <h6>Happy Sell</h6>
-        </div>
-        <div class="fe-box">
-            <img src="features/f6.png" alt="F24/7 Support">
-            <h6>F24/7 Support</h6>
-        </div>
-    </section>
-
-
-
-    <section id="prod-1" class="active">
-
-
-        <h2>Featured Products</h2>
-        <div class="prod-container">
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="home active">
+            <h2>Featured Products</h2>
+            <div class="prod-container">
+                <div class="prod fadeIn">
+                    <img src="products/n2.jpg" alt="Smart Casual Shirt">
+                    <div class="des">
+                        <span>Calvin Klein</span>
+                        <h5>Smart Casual Button-Down</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4>£79</h4>
                     </div>
-                    <h4>£78</h4>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
 
-            </div>
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="prod fadeIn">
+                    <img src="products/n1.jpg" alt="Cotton Shirt">
+                    <div class="des">
+                        <span>Calvin Klein</span>
+                        <h5>Cotton in White</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4>£89</h4>
                     </div>
-                    <h4>£78</h4>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
-
             </div>
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About ASKDEAL</h2>
+            <p>
+                ASKDEAL is your one-stop destination for all shopping needs. We offer a
+                variety of products at unbeatable prices, from the latest gadgets to
+                fashionable clothing. Enjoy seamless shopping with secure payment
+                methods and fast delivery.
+            </p>
+
+            <!-- Features List -->
+            <div class="features">
+                <h3>Why Choose ASKDEAL?</h3>
+                <div class="section-p1">
+                    <div class="fe-box">
+                        <img src="features/f1.png" alt="Free Shipping">
+                        <h6>Free Shipping</h6>
                     </div>
-                    <h4>£78</h4>
-                </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
-
-            </div>
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="fe-box">
+                        <img src="features/f2.png" alt="Online Order">
+                        <h6>Online Order</h6>
                     </div>
-                    <h4>£78</h4>
-                </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
-
-            </div>
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="fe-box">
+                        <img src="features/f3.png" alt="Save Money">
+                        <h6>Save Money</h6>
                     </div>
-                    <h4>£78</h4>
-                </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
-
-            </div>
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="fe-box">
+                        <img src="features/f4.png" alt="Promotions">
+                        <h6>Promotions</h6>
                     </div>
-                    <h4>£78</h4>
-                </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
-
-            </div>
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="fe-box">
+                        <img src="features/f5.png" alt="Happy Sell">
+                        <h6>Happy Sell</h6>
                     </div>
-                    <h4>£78</h4>
-                </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
-
-            </div>
-            <div class="prod">
-                <img src="products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="fe-box">
+                        <img src="features/f6.png" alt="24/7 Support">
+                        <h6>24/7 Support</h6>
                     </div>
-                    <h4>£78</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart"></i></a>
-
             </div>
+        </section>
+    </main>
 
-
-        </div>
-
-
-
-        <h2>Categories</h2>
-        <div class="container">
-            <button class="box" onclick="showSection('electronics')">
-                <h3>Electronics</h3>
-            </button>
-            <button class="box" onclick="showSection('clothing')">
-                <h3>Clothing</h3>
-            </button>
-            <button class="box" onclick="showSection('furniture')">
-                <h3>Furniture</h3>
-            </button>
-            <button class="box" onclick="showSection('sports')">
-                <h3>Sports</h3>
-            </button>
-        </div>
-    </section>
-
-
-
-
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="container">
-            <!-- Product Card 1 -->
-            <div class="box">
-                <img src="gaming-laptop.jpg" alt="Gaming Laptop" />
-                <h3>Gaming Laptop</h3>
-                <p>
-                    Old Price: <span class="old-price">$1500</span> Now: <strong>$1200</strong>
-                </p>
-                <button class="button">Buy Now</button>
-                <span class="product-tag">Best Seller</span>
-            </div>
-
-            <!-- Product Card 2 -->
-            <div class="box">
-                <img src="smartphone.jpg" alt="Smartphone" />
-                <h3>Smartphone</h3>
-                <p>
-                    Old Price: <span class="old-price">$1000</span> Now: <strong>$850</strong>
-                </p>
-                <button class="button">Buy Now</button>
-                <span class="product-tag">New</span>
-            </div>
-
-            <!-- Product Card 3 -->
-            <div class="box">
-                <img src="headphones.jpg" alt="Headphones" />
-                <h3>Wireless Headphones</h3>
-                <p>
-                    Old Price: <span class="old-price">$300</span> Now: <strong>$220</strong>
-                </p>
-                <button class="button">Buy Now</button>
-                <span class="product-tag">Discounted</span>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="box">
-                <img src="tablet.jpg" alt="Tablet" />
-                <h3>Tablet</h3>
-                <p>
-                    Old Price: <span class="old-price">$500</span> Now: <strong>$400</strong>
-                </p>
-                <button class="button">Buy Now</button>
-                <span class="product-tag">Top Pick</span>
-            </div>
-        </div>
-    </section>
-
-    </section>
-
-    <section id="deals">
-        <h2>Best Deals</h2>
-        <div class="container">
-
-            <div class="box">
-                <img src="headphones.jpg" alt="Headphones" />
-                <h3>Wireless Headphones</h3>
-                <p>
-                    Old Price: <span class="old-price">$300</span> Now: <strong>$220</strong>
-                </p>
-                <button class="button">Buy Now</button>
-                <span class="product-tag">Discounted</span>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="box">
-                <img src="tablet.jpg" alt="Tablet" />
-                <h3>Tablet</h3>
-                <p>
-                    Old Price: <span class="old-price">$500</span> Now: <strong>$400</strong>
-                </p>
-                <button class="button">Buy Now</button>
-                <span class="product-tag">Top Pick</span>
-            </div>
-        </div>
-        </div>
-
-    </section>
-
-    <section id="about">
-        <h2>About ASKDEAL</h2>
-        <p>
-            ASKDEAL is your one-stop destination for all shopping needs. We offer a
-            variety of products at unbeatable prices, from the latest gadgets to
-            fashionable clothing. Enjoy seamless shopping with secure payment
-            methods and fast delivery.
-        </p>
-
-        <!-- Features List -->
-        <div class="features">
-            <h3>Why Choose ASKDEAL?</h3>
-            <ul>
-                <li><strong>Wide Variety of Products:</strong> From electronics to apparel, we have everything you need.
-                </li>
-                <li><strong>Fast Delivery:</strong> Get your orders quickly with our reliable delivery service.</li>
-                <li><strong>Secure Payments:</strong> We offer secure payment methods to ensure your safety.</li>
-                <li><strong>24/7 Customer Support:</strong> Our customer support team is always here to help.</li>
-            </ul>
-        </div>
-
-
-
-        <!-- Call-to-Action Button -->
-        <div class="cta-container">
-            <a href="#products" class="cta-button">Explore Our Products</a>
-        </div>
-    </section>
-
-
+    <!-- Footer Section -->
     <footer>
-
         <div class="footer-content">
             <div class="footer-links">
                 <h2>Quick Links</h2>
@@ -390,24 +154,17 @@
             <div class="footer-social">
                 <h2>Follow Us</h2>
                 <div class="social-icons">
-                    <a href="#" class="social-icon">
-                        Facebook
-                    </a>
-                    <a href="#" class="social-icon">
-                        Twitter
-                    </a>
-                    <a href="#" class="social-icon">
-                        Instagram
-                    </a>
-                    <a href="#" class="social-icon">
-                        LinkedIn
-                    </a>
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="date">&copy; 2025 ASKDEAL. All rights reserved.</p>
+            <p>&copy; 2025 ASKDEAL. All rights reserved.</p>
         </div>
     </footer>
+</body>
 
 </html>
